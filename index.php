@@ -53,7 +53,15 @@
             } elseif($page == 'shop'){
                 require('templates/shop.php');
             } elseif($page == 'product'){
-
+                $id=$_GET['id'];
+                $good=[];
+                foreach ($goods as $product){
+                    if($product['id']==$id){
+                        $good=$product;
+                        break;
+                    }
+                }
+                require('templates/openedProduct.php');
             }             
             ?>
         </div>

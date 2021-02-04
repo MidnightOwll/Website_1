@@ -1,16 +1,14 @@
 <div id="openedProduct-img">
-                    <img src="http://placehold.it/342x260">
-                </div>
-                <div id="openedProduct-content">
-                    <h1 id="openedProduct-name">
-                        Название продукта
-                    </h1>
-                    <div id="openedProduct-desc">
-                        Здесь будет описание продукта. Здесь будет описание продукта. Здесь будет описание продукта.
-                        Здесь будет описание продукта. Здесь будет описание продукта. Здесь будет описание продукта.
-                        Здесь будет описание продукта. Здесь будет описание продукта. Здесь будет описание продукта.
-                    </div>
-                    <div id="openedProduct-price">
-                        Цена: 0000 $
-                    </div>
-                </div>
+    <img src="<?php echo $good['img'];?>">
+</div>
+<div id="openedProduct-content">
+    <h1 id="openedProduct-name">
+        <?php echo $good['name'];?>
+    </h1>
+    <div id="openedProduct-desc">
+        <?php echo $good['desc'];?>
+    </div>
+    <div id="openedProduct-price">
+        <?php echo $good['price'];?>
+    </div>
+</div>
